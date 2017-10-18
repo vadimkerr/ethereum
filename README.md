@@ -14,6 +14,6 @@ Generates 6 lines that then cast to an I Ching hexagram. More on Wikipedia: <a h
 
 I wrote these contracts for <a href="https://github.com/0xb100d">this</a> nice guy who maintains <a href="https://github.com/0xb100d/eChing">this</a> repo. Also he mantains a website where you can try it out. For more information visit his original <a href="https://github.com/0xb100d/eChing">repository</a>.
 
-Actualy the contracts just generate 6 pseudo random numbers considering block number, input string, address and line height.
+Actually the contracts just generate 6 pseudo random numbers considering block number, input string, address and line height.
 
 There are two versions of the contract, one of them uses Oraclize and takes a random number from <a href="https://www.wolframalpha.com/">WolframAlpha</a> and then uses it as a seed. The other one just do ```uint(keccak256(block.number, msg.sender, _question, _lineHeight))```.
